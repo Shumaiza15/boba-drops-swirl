@@ -1,11 +1,11 @@
 body{
 margin:0;
 font-family: cursive;
-color:yellow;
+background:#ffeb3b;
 }
 
 header{
-color:pink
+background:#ff4081;
 padding:20px;
 text-align:center;
 }
@@ -23,7 +23,7 @@ text-decoration:underline;
 }
 
 .para{
-color:rgb(00, 229, 255);
+background:#00e5ff;
 text-align:center;
 padding:60px;
 }
@@ -43,9 +43,7 @@ background:red;
 
 .gallery{
 display:grid;
-display: grid;
-grid-auto-flow: column;
-grid-auto-columns: minmax(200px, 1fr);
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
 padding:20px;
 }
@@ -71,17 +69,17 @@ padding:20px;
 }
 
 .box1{
-color:rgb(255, 87, 34);
+background:#ff5722;
 padding:15px;
 }
 
 .box2{
-color:rgb(76, 175, 80;
+background:#4caf50;
 padding:15px;
 }
 
 .box3{
-color:rgb(33, 150, 243;
+background:#2196f3;
 padding:15px;
 }
 
@@ -93,3 +91,9 @@ padding:10px;
 margin-top:30px;
 }
 
+.error{
+background:#9c27b0;
+color:white;
+text-align:center;
+padding:100px;
+}
