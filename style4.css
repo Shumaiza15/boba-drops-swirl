@@ -5,7 +5,7 @@ color:yellow;
 }
 
 header{
-background:#ff4081;
+color:pink
 padding:20px;
 text-align:center;
 }
@@ -23,7 +23,7 @@ text-decoration:underline;
 }
 
 .para{
-background:#00e5ff;
+color:rgb(00, 229, 255);
 text-align:center;
 padding:60px;
 }
@@ -43,7 +43,9 @@ background:red;
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: minmax(200px, 1fr);
 gap:15px;
 padding:20px;
 }
@@ -69,17 +71,17 @@ padding:20px;
 }
 
 .box1{
-background:#ff5722;
+color:rgb(255, 87, 34);
 padding:15px;
 }
 
 .box2{
-background:#4caf50;
+color:rgb(76, 175, 80;
 padding:15px;
 }
 
 .box3{
-background:#2196f3;
+color:rgb(33, 150, 243;
 padding:15px;
 }
 
