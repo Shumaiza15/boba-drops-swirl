@@ -27,6 +27,17 @@ background:#00e5ff;
 text-align:center;
 padding:60px;
 }
+.line{
+color:rgb(255, 255, 255);
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+padding: 45px;
+}
+.line:hover{
+color:yellow;
+text-decoration:underline;
+}
 
 .btn{
 background:black;
