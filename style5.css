@@ -74,33 +74,19 @@ h2 {
 }
 
 .gallery {
-  display: flex;
-  overflow: hidden;
-  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
+  padding: 20px;
 }
 
-.gallery-track {
-  display: flex;
-  gap: 15px;
-  animation: scrollLeft 12s linear infinite;
-}
-
-.gallery-track img {
-  width: 220px;
-  height: 180px;
-  object-fit: cover;
+.gallery img {
+  width: 100%;
   border: 5px solid black;
-  flex-shrink: 0;
 }
 
-.gallery-track img:hover {
+.gallery img:hover {
   transform: scale(1.05);
-}
-
-@keyframes scrollLeft {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
 }
 
 .about {
@@ -212,6 +198,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
   .grid-section {
     grid-template-columns: 1fr;
   }
